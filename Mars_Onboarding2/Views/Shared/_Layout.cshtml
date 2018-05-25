@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mars Onboarding</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.12/semantic.min.js"></script>
+
+
+</head>
+<body>
+    <div class="ui large inverted menu">
+        <div class="header item">
+            <a href="/Home/Index" style="padding:5px">
+                <i class="rocket icon"></i> Mars - Onboarding
+            </a>
+        </div>
+        <a class="item" href="/Products/Index">
+            Products
+        </a>
+        <a class="item" href="/Customers/Index">
+            Customers
+        </a>
+        <a class="item" href="/Stores/Index">
+            Stores
+        </a>
+        <a class="item" href="/ProductSolds/Index">
+            Sales
+        </a>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
